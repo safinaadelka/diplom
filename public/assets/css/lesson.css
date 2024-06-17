@@ -1,0 +1,370 @@
+body {
+    background: var(--cream, #F4F4F4);
+}
+
+
+.lesson {
+    margin-top: 90px;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.lesson_content {
+    display: flex;
+    gap: 60px;
+    justify-content: start;
+    width: 100%;
+    position: relative;
+
+}
+
+.kurs_lessons {
+    background: var(--blue, #232323);
+    min-width: 320px;
+    /* min-height: 780px; */
+
+    width: 320px;
+    height: calc(100vh - 150px);
+    /* position: sticky; */
+
+    border-radius: 20px;
+    border: 1px solid var(--grey, #DADADA);
+
+    overflow: hidden;
+
+    position: sticky;
+
+    top: 0;
+
+}
+
+.kurs_lessons_main {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    height: 15%;
+    justify-content: center;
+}
+
+.kurs_lessons_main h3 {
+    color: white;
+}
+
+.lesson_link {
+    border-left: 8px solid var(--grey, #DADADA);
+    background: #FFF;
+
+    display: flex;
+    width: 100%;
+    padding: 12px 25px 12px 17px;
+    align-items: center;
+    gap: 17px;
+}
+
+.lesson_link_arrow {
+    margin-right: -15px;
+}
+
+.lesson_link p.text3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: black;
+}
+
+.done_lesson {
+    border-left: 8px solid var(--green, #16CA48);
+    background: linear-gradient(0deg, rgba(22, 202, 72, 0.30) 0%, rgba(22, 202, 72, 0.30) 100%), #FFF;
+}
+
+.pause_lesson {
+    border-left: 8px solid var(--green, #FFC42C);
+    background: linear-gradient(0deg, rgba(255, 196, 44, 0.30) 0%, rgba(255, 196, 44, 0.30) 100%), #FFF;
+}
+
+.kurs_lessons_scroll {
+    height: 85%;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.kurs_progress {
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 100px;
+    background: var(--orange, #FF6131);
+
+    color: white;
+}
+
+.kurs_lessons_scroll::-webkit-scrollbar {
+    border-radius: 100px;
+    padding-top: 5px;
+    width: 100%;
+    height: 10px;
+    background-color: #e5e5e5;
+}
+
+.kurs_lessons_scroll::-webkit-scrollbar-track {
+    background: white;
+    /* цвет зоны отслеживания */
+}
+
+.kurs_lessons_scroll::-webkit-scrollbar-thumb {
+    background-color: #e5e5e5;
+    /* цвет бегунка */
+    border-radius: 20px;
+    /* округлось бегунка */
+    /* отступ вокруг бегунка */
+    border: 3px solid white;
+}
+
+.lesson_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    justify-content: start;
+}
+
+.lesson_plus_number {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+.lesson_plus_number a.status {
+    background-color: black;
+}
+
+.lesson_img {
+    max-width: 750px;
+    max-height: 411px;
+    width: 100%;
+    height: 100%;
+    /* width: 750px;
+    height: 411px; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.lesson_img_inside {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lesson_div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.lesson_ol_list {
+    padding-left: 22px;
+}
+
+.lesson_ol_list li {
+    list-style-position: outside;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+}
+
+.img_place {
+    border-radius: 20px;
+    background: #FFF;
+    max-width: 760px;
+    max-height: 300px;
+    /* width: 760px;
+    height: 300px; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.img_place img {
+    height: 100%;
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+.lesson_word_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lesson_word_cards {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lesson_img_mobile {
+    display: none;
+}
+
+.pause {
+    border-radius: 10px;
+    background: #FFC42C;
+    display: flex;
+    width: 66px;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.done {
+    border-radius: 10px;
+    background: var(--green, #16CA48);
+    display: flex;
+    width: 66px;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.lesson_stop_done {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lesson_actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.grey {
+    opacity: 0.5;
+    background: var(--dark_grey, #888);
+}
+
+.grey .white_arrow {
+    transform: rotate(-180deg);
+}
+
+
+
+
+/* .all p{
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+} */
+.all{
+    width: 100%;
+}
+.all ul {
+    padding-left: 22px;
+    margin: 20px 0;
+}
+
+.all ol {
+    padding-left: 22px;
+    margin: 20px 0;
+}
+
+.all li {
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+
+    list-style-position: outside;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (width < 1140px) {
+
+    .img_place {
+        max-height: 500px;
+        height: auto;
+    }
+
+    .img_place img {
+        height: auto;
+        width: 100%;
+
+        object-fit: contain;
+    }
+
+    .kurs_lessons {
+        display: none;
+    }
+
+    .lesson_content {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .lesson_img {
+        display: none;
+    }
+
+    .lesson_img_mobile {
+        max-width: 100vw;
+        max-height: 218px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 83px;
+        z-index: -1;
+        display: block;
+    }
+
+    .lesson_plus_number {
+        margin-top: 165px;
+    }
+
+    .lesson_foto_plus_name {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: -15px;
+    }
+
+    .lesson_actions a.black_btn {
+        width: 66px;
+    }
+
+    a.black_btn p.text2 {
+        display: none;
+    }
+}

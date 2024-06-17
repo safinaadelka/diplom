@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "easyfrench",
+			"path": "../.."
+		},
+		{
+			"name": "js",
+			"path": "../../../../../Users/safin/OneDrive/Рабочий стол/tinymce/js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "easyfrench"
+	}
+}

@@ -1,0 +1,1494 @@
+.profile {
+    margin-top: 90px;
+    padding-top: 60px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.profile_content {
+    display: flex;
+    gap: 40px;
+}
+
+.profile_left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.profile_right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* приветствие */
+.privet {
+    max-width: 746px;
+    max-height: 338px;
+    height: 338px;
+    border-radius: 20px;
+    border: 1px solid var(--grey, #DADADA);
+    background: var(--black---23, #232323);
+
+
+    display: flex;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+}
+
+.privet h1,
+.privet p.text2_reg {
+    color: white;
+}
+
+.privet_main {
+    padding: 30px 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.privet_up {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+.privet_img {
+    width: 320px;
+    margin-bottom: -20px;
+    /* display: flex;
+    align-items: flex-end; */
+    margin-right: -30px;
+}
+
+.privet .benefit_card_image {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    max-width: 320px;
+    width: 280px;
+}
+
+/* приветствие */
+/* текущие курсы */
+
+
+.pie {
+    --p: 20;
+    --b: 8px;
+    --c: darkred;
+    --w: 100px;
+
+    width: var(--w);
+    height: 100px;
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    place-content: center;
+}
+
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pie:before {
+    inset: 0;
+    background:
+        radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+        conic-gradient(var(--c) calc(var(--p)*1%), #ECFBF0 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+    inset: calc(50% - var(--b)/2);
+    background: var(--c);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+
+.users_statistic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+    gap: 5px;
+
+}
+
+
+.user_courses {
+    max-width: 746px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user_course {
+    padding: 15px;
+
+    border-radius: 20px;
+    border: 1px solid #DADADA;
+
+    background: #FFF;
+
+
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+
+    color: black;
+}
+
+.user_course:hover {
+    transform: scale(1.02);
+    transition: 0.4s all ease-in-out;
+    transform-origin: center;
+    object-position: center;
+}
+
+.user_course_left {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    padding: 15px 0 15px 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.user_course_left_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: start;
+    padding: 5px 0;
+
+}
+
+.user_course_left_main p.text3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: black;
+    max-width: 100%;
+}
+
+
+/* текущие курсы */
+
+
+/* мой словарь */
+.profile_block {
+    border-radius: 20px;
+    border: 1px solid #DADADA;
+
+
+    width: 354px;
+    height: 338px;
+
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    padding: 15px;
+
+    position: relative;
+    overflow: hidden;
+
+    color: black;
+}
+
+
+
+.sky_color {
+    background: var(--sky, #C2EBFF);
+}
+
+.yellow_color {
+    background: linear-gradient(0deg, #FEDC84 0%, #FEDC84 100%), #FFF;
+}
+
+.green_color {
+    background: #A2EAB6;
+}
+
+.violet_color {
+    background: #E4D8FF;
+}
+
+.coral_color {
+    background: #FFA8A6;
+}
+
+.white_color {
+    background: #FFf;
+}
+
+.profile_block:hover {
+    transform: scale(1.02);
+    transition: 0.4s all ease-in-out;
+    transform-origin: center;
+    object-position: center;
+}
+
+.dictionary_main {
+    padding: 0 15px;
+    z-index: 5;
+}
+
+.dictionary_statistic {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px 0;
+    border-bottom: 1px solid #888;
+}
+
+.dictiony_up {
+    display: flex;
+    gap: 15px;
+    z-index: 5;
+    align-items: end;
+}
+
+.dictiony_up h2 {
+    width: 100%;
+    padding: 15px 0px 0 15px;
+}
+
+.go_image {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+
+    width: 222px;
+    height: 222px;
+    z-index: 0;
+}
+
+.yellow_color img.go_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+}
+
+.user_avas {
+    padding: 0 15px;
+    margin-top: auto;
+}
+
+.white_color .profile_block_down {
+    width: 100%;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.white_color .new_up {
+    width: 100%;
+    height: auto;
+    padding-top: auto;
+}
+
+.white_color .user_avas {
+    width: 100%;
+    object-fit: contain;
+    padding: 0;
+    height: 100%;
+}
+
+#mobile_text3 {
+    display: none;
+}
+
+.admin_profile_content {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+@media screen and (width < 1140px) {
+    .white_color .profile_block_down {
+        width: 100%;
+        padding: 0 5px;
+        height: 100%;
+    }
+
+    .user_avas {
+        padding: 0 5px;
+    }
+
+    .profile_content {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .profile_left {
+        gap: 20px;
+    }
+
+    .profile_right {
+        gap: 20px;
+    }
+
+    /* приветствие */
+    .privet {
+        max-width: 746px;
+        max-height: none;
+        height: 100%;
+        border-radius: 20px;
+        border: none;
+        background: var(--black---23, #232323);
+
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        overflow: hidden;
+
+        width: 100%;
+        top: 0;
+    }
+
+    .fuck {
+        width: 100%;
+        height: 600px;
+        background-color: #232323;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .profile {
+        padding-top: 20px;
+    }
+
+    .kot {
+        position: relative;
+    }
+
+    .go_image {
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+
+        width: 177px;
+        height: 177px;
+        z-index: 0;
+    }
+
+    .privet_main {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .profile_block {
+        width: 320px;
+        height: 305px;
+
+        display: flex;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dictionary_main {
+        padding: 0 5px;
+        z-index: 5;
+    }
+
+    .dictiony_up h2 {
+        width: 100%;
+        padding: 0px 0px 0 5px;
+    }
+
+    .user_course_left {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 5px 0 5px 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #desctop_text3 {
+        display: none;
+    }
+
+    #mobile_text3 {
+        display: -webkit-box;
+    }
+
+    .user_course_left div:first-of-type {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .user_course_left div:first-of-type p.text3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        color: black;
+        max-width: 100%;
+    }
+
+    .user_course {
+        gap: 10px;
+    }
+
+    .pie {
+        --p: 20;
+        --b: 8px;
+        --c: darkred;
+        --w: 70px;
+
+        width: var(--w);
+        height: 70px;
+        aspect-ratio: 1;
+        position: relative;
+        display: inline-grid;
+        place-content: center;
+    }
+
+    .diagram {
+        margin-bottom: 0;
+    }
+
+    .privet .benefit_card_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 320px;
+        width: 320px;
+    }
+
+
+
+
+}
+
+.tab_container {
+    position: relative;
+}
+
+#toggleMenu {
+    padding: 15px 30px;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #FF6131;
+    color: white;
+    display: flex;
+}
+
+.profile_nav {
+    max-width: 320px;
+    width: 300px;
+    background: #232323;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 150px 0 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    justify-content: start;
+
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    z-index: 20;
+    transition: left 0.4s ease-in-out;
+
+}
+
+.exit {
+    margin-left: 40px;
+}
+
+.profile_nav_scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+.profile_nav_up {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.krest {
+    position: absolute;
+    right: 30px;
+    top: -30px;
+}
+
+.profile_nav_up_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.profile_nav_up_main h3,
+.profile_nav_up_main p.text4 {
+    color: white;
+}
+
+.profile_foto img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.profile_foto {
+    height: 120px;
+    width: 120px;
+    border-radius: 1200px;
+    overflow: hidden;
+}
+
+.profile_nav_link {
+    display: flex;
+    padding: 20px 0px;
+    align-items: flex-end;
+    gap: 20px;
+    justify-content: start;
+    background: none;
+    color: white;
+
+    padding-left: 40px;
+}
+
+.profile_nav_link_active {
+
+    background: #FF6131;
+}
+
+.profile_nav_scroll p.text4 {
+    color: #AAA;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.profile_nav_link.text3 {
+    display: flex;
+    padding: 10px 0px;
+    align-items: flex-end;
+    gap: 20px;
+    justify-content: start;
+    background: none;
+    color: white;
+
+    padding-left: 92px;
+}
+
+.profile_nav_link_active.text3 {
+    background: #FF6131;
+}
+
+
+
+
+
+/* мои курсы */
+
+
+.mycourses_main a.user_course {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my_course_up {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.my_course_down {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 30px 15px 15px 15px;
+    border-top: 1px solid #dadada;
+    justify-content: space-between;
+}
+
+.line_button {
+    background: none;
+    border-bottom: 2px solid #000;
+    font-family: "Onest";
+}
+
+.red_btn {
+    font-family: "Onest";
+    background: var(--red, #FF3434);
+}
+
+.mycourses_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mycourses_main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (width < 1140px) {
+    .my_course_up {
+        display: flex;
+        gap: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .my_course_down {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        height: 100%;
+        width: 100%;
+        padding: 20px 5px 15px 5px;
+        border-top: 1px solid #dadada;
+    }
+
+    .profile_nav {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        background: #232323;
+        min-height: 100vh;
+        max-height: 100%;
+        padding: 80px 0 80px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+        justify-content: start;
+
+        position: fixed;
+        left: -100%;
+        top: 0px;
+        bottom: 0;
+        z-index: 10000;
+        transition: left 0.4s ease-in-out;
+
+        overflow-x: hidden;
+
+    }
+
+
+
+    .exit {
+        margin-left: 40px;
+        width: auto;
+        align-self: self-start;
+    }
+}
+
+
+/* мои курсы */
+
+
+
+/* мои словарь */
+
+.word_card_down {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1px solid #dadada;
+    padding-top: 5px;
+}
+
+.forget,
+.learn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.forget {
+    border-right: 1px solid #dadada;
+}
+
+.learn {
+    border-left: 1px solid #dadada;
+}
+
+.red_arrow_btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 10000px;
+    background: var(--black, #FF3434);
+
+    border: none;
+}
+
+.program_card_actions {
+    display: flex;
+    gap: 15px;
+}
+
+.word_delete,
+.word_edit {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    color: white;
+}
+
+.word_delete {
+    background: #FF3434;
+}
+
+.word_edit {
+    background: #232323;
+}
+
+.kurs_card_about {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.forget p.text2 {
+    color: var(--red, #FF3434);
+
+}
+
+.learn p.text2 {
+    color: var(--green, #16CA48);
+}
+
+
+.filters {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    border-bottom: 2px solid var(--grey, #DADADA);
+    height: 58px;
+
+}
+
+.filter {
+    color: #232323;
+    display: flex;
+    padding: 15px 5px 15px 5px;
+    align-items: center;
+    gap: 15px;
+
+    border-bottom: 2px solid var(--grey, #DADADA);
+
+    white-space: nowrap;
+}
+
+
+.filter_active {
+    color: var(--blue, #2B59C9);
+    border-bottom: 2px solid var(--blue, #2B59C9);
+}
+
+
+.up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green_btn {
+    border-radius: 100000px;
+    background: var(--green, #16CA48);
+    color: white;
+}
+
+
+
+input[type="search"] {
+    max-width: 463px;
+    min-width: 320px;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
+    width: 460px;
+    border-radius: 10px;
+    border: 2px solid var(--grey, #DADADA);
+    background: var(--White, #FFF);
+
+    outline: none;
+
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    color: #000;
+}
+
+
+
+input[type="search"]::-webkit-search-results-button {
+    display: none;
+}
+
+input[type="search"]:active,
+input[type="search"]:focus {
+    border: 2px solid #2B59C9;
+    /* Цвет рамки при фокусировке и активации */
+}
+
+input[type="search"]::placeholder {
+    opacity: 100%;
+    color: var(--dark_grey, #888);
+}
+
+.mydictionary_main {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 700px;
+}
+
+
+
+
+
+@media screen and (width < 1140px) {
+    .program_card_actions {
+        flex-direction: column;
+    }
+
+    .red_arrow_btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    input[type="search"] {
+        width: 320px;
+    }
+
+    .kurs_card_about {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .filters {
+        display: flex;
+        align-items: start;
+        overflow-x: scroll;
+        max-width: 320px;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .green_btn p.text2 {
+        display: none;
+
+    }
+
+    .green_btn {
+        max-width: 60px;
+        max-height: 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .mydictionary_main {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: auto;
+        max-height: 100%;
+    }
+
+    .mycourses_middle {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
+
+
+
+
+
+
+
+/* мой словарь */
+
+
+
+
+/* мой профиль */
+.myprofile_main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.myprofile_part {
+    border-radius: 20px;
+    border: 1px solid var(--grey, #DADADA);
+    background: #FFF;
+
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 60px;
+
+    position: relative;
+
+}
+
+.myprofile_part_column {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+
+.profile_status {
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 10000px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myprofile_info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.myprofile_info_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.myprofile_info_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+}
+
+.myprofile_foto {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.myprofile_foto img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (width < 1140px) {
+    .myprofile_main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .myprofile_part {
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+
+        padding: 20px;
+        position: relative;
+
+    }
+
+    .myprofile_part_column {
+        gap: 30px;
+    }
+
+    .myprofile_info {
+        gap: 30px;
+    }
+
+    .profile_status {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+/* мой профиль */
+
+
+
+
+
+
+
+
+
+
+
+
+.form_profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: start;
+}
+
+.animate_input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    flex: 1 1 1;
+    align-self: stretch;
+    width: 100%;
+    min-width: 280px;
+    max-width: 345px;
+
+}
+
+.red {
+    color: #EC1C1C;
+}
+
+.form {
+    height: 53px;
+    position: relative;
+    max-width: 350px;
+    min-width: 280px;
+    width: 100%;
+    /* align-self: stretch; */
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: 2px solid #DADADA;
+
+    padding: 15px;
+    transition: all 0.3s ease;
+    color: #000;
+
+    cursor: text;
+
+
+
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: 2px solid #DADADA;
+
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+    color: #000;
+
+    cursor: text;
+
+
+
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 6px;
+    border: 2px solid #DADADA;
+
+    padding: 15px;
+    transition: all 0.3s ease;
+    color: #000;
+
+    cursor: text;
+
+
+
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+textarea:focus {
+    border: 2px solid var(--blue, #2B59C9);
+    outline: none;
+}
+
+input[type="search"] {
+    position: static;
+}
+
+input[type="submit"] {
+    position: static;
+}
+
+input[type="file"] {
+    position: static;
+    border: none;
+    padding: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #FF6131;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+}
+
+label {
+    position: absolute;
+    left: 12px;
+    top: 30%;
+    color: #888888;
+    cursor: text;
+    transition: 200ms ease-in;
+    padding: 0px 6px;
+    background: #fff;
+
+    text-transform: lowercase;
+
+
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+
+
+}
+
+input:focus {
+    border: 2px solid var(--blue, #2B59C9);
+    outline: none;
+}
+
+input:focus~label,
+input:not(:placeholder-shown):not(:focus)~label {
+    top: -17%;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+
+    /* label после анимации */
+}
+
+input:focus~label {
+    color: var(--blue, #2B59C9);
+}
+
+select:focus {
+    border: 2px solid var(--blue, #2B59C9);
+    outline: none;
+}
+
+
+
+.input_error:focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+.input_error:focus~label {
+    color: red;
+}
+
+.tab-content {
+    display: none;
+}
+
+
+
+::-webkit-scrollbar {
+    border-radius: 100px;
+    padding-top: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 100px;
+    /* цвет зоны отслеживания */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    /* цвет бегунка */
+    border-radius: 20px;
+    /* округлось бегунка */
+    /* отступ вокруг бегунка */
+    border: 3px solid #fff;
+    ;
+}
+
+
+
+.word_modal {
+    display: none;
+}
+
+.word_modal_active {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#add_word_btn {
+    background: var(--green, #16CA48);
+}
+
+#add_word_btn:disabled {
+    background-color: #DADADA;
+}
+
+#add_word_btn:disabled:hover {
+    transition: none;
+    transform: none;
+}
+#add_word_btn_first {
+    background: var(--green, #16CA48);
+}
+
+#add_word_btn_first:disabled {
+    background-color: #DADADA;
+}
+
+#add_word_btn_first:disabled:hover {
+    transition: none;
+    transform: none;
+}
+
+#edit_word_btn {
+    background-color: #2B59C9;
+}
+
+#edit_word_btn:disabled {
+    background-color: #DADADA;
+}
+
+#edit_word_btn:disabled:hover {
+    transition: none;
+    transform: none;
+}
+
+@media screen and (width < 1140px) {
+    .modal {
+        padding: 60px 20px;
+        border: none;
+        gap: 20px;
+        border-radius: 15px;
+    }
+
+    .close_krest {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+}
+
+.modal h2 {
+    text-align: center;
+}
+
+.edit_word_place {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    text-align: center;
+
+    background: #F4F4F4;
+}
+
+
+.pdf_icon {
+    height: 50px;
+    width: 50px;
+}
+
+.dictionary_statistic_div {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+
+}
+
+.dictionary_statistic_div a.text2_reg {
+    text-decoration: underline;
+    color: #2B59C9;
+}
+
+#filterPagination .program_cards {
+    display: none;
+}
+
+#filterPagination .program_cards_active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal_small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 9999;
+    color: black;
+    justify-content: center;
+    display: none;
+}
+
+.modal_small_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px ;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.2), 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.visible_card{
+    display: block;
+}
+.hidden_card{
+    display: none;
+}
+.mydictionary_main{
+    display: none;
+    
+}
+.mydictionary_main_active{
+    display: grid;
+}
+@media screen and (width < 1140px){
+    .mydictionary_main_active{
+        display: flex;
+    }
+}

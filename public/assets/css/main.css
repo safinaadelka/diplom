@@ -1,0 +1,147 @@
+
+main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+main>div {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+main>div h1 {
+  max-width: 350px;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 355px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide h3 {
+  text-align: center;
+  color: white;
+}
+
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  padding-bottom: 50px;
+
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/france_foto1.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/france_foto2.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/france_foto3.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/france_foto4.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/france_foto5.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+#mobile_france_btn {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
+
+
+@media screen and (width < 1140px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 0;
+  }
+
+  #france_btn {
+    display: none;
+  }
+
+  #mobile_france_btn {
+    display: block;
+  }
+}
+
+
+@media screen and (width < 1140px){
+  .swiper-slide {
+    width: 355px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

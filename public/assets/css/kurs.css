@@ -1,0 +1,284 @@
+/* главная курса */
+
+body {
+    background: var(--cream, #F4F4F4);
+}
+
+.kurs {
+    margin-top: 90px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.kurs_content {
+    border-radius: 20px;
+    border: 1px solid var(--grey, #DADADA);
+    background: var(--blue, #2B59C9);
+    width: 100%;
+
+    padding: 0;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    overflow: hidden;
+}
+
+.kurs_main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+    padding: 60px 0 60px 60px;
+    max-width: 560px;
+}
+
+.kurs_main h1,
+.kurs_main li,
+.kurs_main p {
+    color: white;
+}
+
+.kurs_main ul.kurs_card_info {
+    padding: 0;
+    margin: 0;
+}
+
+.kurs_main .kurs_statistics {
+    padding: 0;
+    margin: 0;
+}
+
+.kurs_main .kurs_card_about {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.kurs_image {
+    max-width: 460px;
+    max-height: 428px;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+
+.kurs_main_up {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.kurs_statistic_icon {}
+
+/* мобилка */
+@media screen and (width < 1140px) {
+    .kurs {
+        margin-top: 83px;
+        padding-top: 0px;
+        width: 100%;
+        background: var(--blue, #2B59C9);
+    }
+
+    .kurs_content {
+        border-radius: 20px;
+        border: none;
+        background: var(--blue, #2B59C9);
+        width: 100%;
+        padding: 30px 0;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+
+        gap: 60px;
+
+    }
+
+    .kurs_main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        padding: 0;
+        max-width: 560px;
+    }
+
+    .kurs_main .kurs_card_about {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        padding-bottom: 30px;
+        width: 320px;
+     
+    }
+
+
+
+    .kurs_image {
+        max-width: 460px;
+        max-height: 428px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    #go_study p{
+        display: none;
+    }
+    #go_study{
+        width: 70%;
+    }
+    #delete_study{
+        width: 30%;
+    }
+    #delete_study p{
+        display: none;
+    }
+}
+
+/* мобилка */
+/* главная курса */
+
+
+
+
+.green_btn {
+    border-radius: 100000px;
+    background: var(--green, #16CA48);
+    color: white;
+}
+.red_btn {
+    border-radius: 100000px;
+    background: #FF3434;
+    color: white;
+}
+
+/* программа курса */
+.program_content {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.program_cards {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.program_card {
+    width: 100%;
+    display: flex;
+    min-width: 320px;
+    max-width: 1140px;
+    padding: 10px 15px 10px 30px;
+    align-items: center;
+    gap: 30px;
+
+    border-radius: 20px;
+    border: 1px solid var(--grey, #DADADA);
+    background: #FFF;
+
+    color: black;
+}
+
+.program_card:hover {
+    transform: scale(1.02);
+    transition: 0.4s all ease-in-out;
+    transform-origin: center;
+    object-position: center;
+}
+
+.program_card p.text2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.program_card_main {
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.program_card_number {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 5px;
+    background: var(--dark_grey, #888);
+    color: white;
+}
+
+.black_arrow_btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 10000px;
+    background: var(--black, #232323);
+
+    border: none;
+}
+
+@media screen and (width < 1140px) {
+    .program_content {
+        padding: 80px 0;
+    }
+
+    .program_card {
+        padding: 15px 15px 15px 20px;
+        align-items: start;
+        gap: 15px;
+        border-radius: 15px;
+    }
+
+    .program_card p.text2 {
+        overflow: visible;
+        text-overflow: clip;
+        -webkit-line-clamp: inherit;
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+    }
+
+    .program_card_main {
+        padding: 5px 0;
+    }
+
+    .program_card_number {
+        display: none;
+    }
+
+    .black_arrow_btn {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+/* программа курса */
